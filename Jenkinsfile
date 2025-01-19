@@ -6,9 +6,7 @@ pipeline {
         VERCEL_TOKEN = credentials('VERCEL_TOKEN')
     }
 
-    options {
-        skipDefaultCheckout(true) // Skip the default checkout
-    }
+    
     stages {
 
         stage ('Clean up code') {
